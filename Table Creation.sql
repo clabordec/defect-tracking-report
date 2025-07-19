@@ -64,3 +64,13 @@ CONSTRAINT fk_production_defect_tracking_repair_station_id FOREIGN KEY (Repair_S
 CONSTRAINT fk_production_defect_tracking_defect_category_id FOREIGN KEY (Defect_Category_ID) REFERENCES dbo.Defect_Category (ID),
 CONSTRAINT fk_production_defect_tracking_defect_reason_id FOREIGN KEY (Defect_Reason_ID) REFERENCES dbo.Defect_Reason (ID),
 )
+
+
+-- 
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Operator_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Station_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Defect_Category_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Defect_Reason_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Repairman_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Repair_Station_ID] INT NOT NULL
+ALTER TABLE [dbo].[Production_Defect_Tracking] ALTER COLUMN [Repairman_ID] INT NOT NULL
