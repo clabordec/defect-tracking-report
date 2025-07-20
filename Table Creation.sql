@@ -5,6 +5,7 @@ CREATE TABLE dbo.Roles (
 CONSTRAINT pk_roles_id PRIMARY KEY (ID)
 )
 
+-- Create the Staff table
 CREATE TABLE dbo.Staff (
 	ID INT IDENTITY (1,1) NOT NULL,
 	First_Name NVARCHAR(50) NOT NULL,
